@@ -1,0 +1,20 @@
+{
+  "version": "connections-0.1",
+  "connections": [
+    {
+      "source": "root/env0/cloud.Function",
+      "target": "root/env0/handlers.Greeting",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/test:It will return 'Hello, <name>'/Handler",
+      "target": "root/env0/$Closure1_0",
+      "name": "handle()"
+    },
+    {
+      "source": "root/env0/test:It will return 'Hello, <name>'/Handler",
+      "target": "root/env0/cloud.Function",
+      "name": "invoke()"
+    }
+  ]
+}

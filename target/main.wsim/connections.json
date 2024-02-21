@@ -1,0 +1,10 @@
+{
+  "version": "connections-0.1",
+  "connections": [
+    {
+      "source": "root/Default/cloud.Function",
+      "target": "root/Default/handlers.Greeting",
+      "name": "handle()"
+    }
+  ]
+}
