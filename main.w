@@ -2,10 +2,10 @@
 * Main code. The Program entry.
 */
 bring "./handlers" as handlers;
-bring cloud;
+bring "./ports" as ports;
 
 let greetingHandler = new handlers.Greeting();
-let makeGreetingFunction = new cloud.Function(greetingHandler);
+let makeGreetingFunction = new ports.GreetingFunction(greetingHandler);
 
 bring expect;
 
