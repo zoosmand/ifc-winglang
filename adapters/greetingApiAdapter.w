@@ -12,11 +12,17 @@ pub class GreetingApiAdapter impl restApiAdapter.IRestApiAdapter {
     }
 
     inflight pub handle(request: cloud.ApiRequest): cloud.ApiResponse {
-        return cloud.ApiResponse {
-            status: 200,
-            body: this._h.handle(request.query.get("name"))
-        };
-
+        if let name = request.query.tryGet("name") {
+            return cloud.ApiResponse {
+                status: 200,
+                body: this._h.handle(name)
+            };
+        } else {
+            return cloud.ApiResponse {
+                status: 400,
+                body: "Query name=<name> is missing."
+            };
+        }
     }
 }
 
