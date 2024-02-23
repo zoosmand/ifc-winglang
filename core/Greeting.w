@@ -1,5 +1,5 @@
 /**
-Core
+* Core Greeting.
 */
 
 pub class Greeting {

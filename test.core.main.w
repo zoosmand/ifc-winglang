@@ -1,5 +1,5 @@
 /**
-Testing
+* Main Testing.
 */
 bring "./core" as core;
 bring expect;
