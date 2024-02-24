@@ -1,5 +1,5 @@
 /**
-Interface REST API Greeting.
+* Interface REST API Greeting.
 */
 bring cloud;
 bring "./IRestApiAdapter.w" as restApiAdapter;

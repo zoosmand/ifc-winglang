@@ -2,7 +2,6 @@
 * Test Core Greeting.
 */
 
-
 bring cloud;
 bring expect;
 bring "./adapters" as adapters;
@@ -34,16 +33,3 @@ test "it will return 400 and correct answer when name is specified" {
     expect.equal(400, response.status);
     expect.equal("Query name=<name> is missing.", response.body);
 }
-
-
-// import { expect, it, describe } from '@jest/globals';
-// import { makeGreeting } from './core/makeGreeting';
-
-// describe('makeGreeting', () => {
-//     it('Should return a greeting with the provided name', () => {
-//         const name = "World!";
-//         const expected = 'Hello, World!';
-//         const result = makeGreeting(name);
-//         expect(result).toBe(expected);
-//     });
-// });
