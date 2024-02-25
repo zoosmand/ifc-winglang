@@ -5,7 +5,7 @@
 ### 1st step: 
 
 Create an AWS organization within the main account. It is free of charge. AWS Organizations provide a way to centrally manage and govern multiple AWS accounts. In this case, we are setting up an organization named "testing" for organizational purposes. 
-![ALT text](./screenshots/01.png "AWS organizations")
+<img src="./screenshots/01.png" width="400px" alt="AWS organizations">
 
 ### 2nd step: 
 
