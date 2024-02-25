@@ -1,10 +1,10 @@
-# AWS security configuration
+# AWS security access configuration
 
 ## AWS IAM configuration for several AWS organizations.
 
 ### 1st step: 
 
-Create an AWS organization within the main account. It is free of charge. AWS Organizations provide a way to centrally manage and govern multiple AWS accounts. In this case, we are setting up an organization named "testing" for organizational purposes. 
+Create an AWS organization within the main account. It is free of charge. AWS Organizations provide a way to centrally manage and govern multiple AWS accounts. In this case, we are setting up an organization named "testing" for testing purposes. 
 
 <img src="./screenshots/01.png" width="400px" alt="AWS organizations">
 
@@ -26,7 +26,7 @@ Define two roles within the "root" environment (AWS organization, here it is man
 <img src="./screenshots/06.png" width="400px" alt="AWS IAM roles">
 
 ### 4th step: 
-Assign a root administrator for the new AWS organization. Sign up with the email address testong@askug.net and log in to set up the organization. Repeat the steps for defining roles and establishing role relationships within this new environment. Note that in the "testing" environment, there are currently no users or groups configured. 
+Assign a root administrator for the new AWS organization. Sign up with the email address testing@askug.net and log in to set up the organization. Repeat the steps for defining roles and establishing role relationships within this new environment. Note that in the "testing" environment, there are currently no users or groups configured. 
 
 <img src="./screenshots/07.png" width="400px" alt="AWS IAM roles">
 
@@ -73,7 +73,7 @@ aws_secret_access_key = XXXXXXXXXXX
 mfa_serial = arn:aws:iam::852822361563:mfa/zoosman
 ~~~
 
-### 10th step. 
+### 10th step:
 Create a configuration file in the same directory. **$HOME/.aws/config**
 
 ~~~ txt
