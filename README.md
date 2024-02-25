@@ -11,9 +11,9 @@ Asher and I were working together in Blackswan Technologies on CAIOS (Cloud AI O
 
 First of all, I would like to commend Asher for his excellent work. I consider his article, which he refers to as a "report," as a valuable tutorial for the initial steps towards understanding Wing as a technology and Infrastructure from Code (IfC) in general.
 
-Before delving into the code, I took precautions to configure my AWS access in a way that would prevent any harm to my existing infrastructure. It's always wise to consider such measures as a safety net. <https://github.com/zoosmand/ifc-winglang/aws-security.md>
+Before delving into the code, I took precautions to configure my AWS access in a way that would prevent any harm to my existing infrastructure. It's always wise to consider such measures as a safety net. <https://github.com/zoosmand/ifc-winglang/blob/master/aws-security.md>
 
-While attempting to replicate all the steps outlined in Asher's article, I found the first five steps to be quite straightforward and could be skipped to start directly from step 6. <(https://github.com/zoosmand/ifc-winglang/tree/step-6)>
+While attempting to replicate all the steps outlined in Asher's article, I found the first five steps to be quite straightforward and could be skipped to start directly from step 6. <https://github.com/zoosmand/ifc-winglang/tree/step-6>
 
 Step 7 <https://github.com/zoosmand/ifc-winglang/tree/step-7> is particularly crucial as it marks the separation of business logic from the core/system one. This allows core developers to continue using Wing language while others may opt for the more convenient TypeScript or ES6.
 
