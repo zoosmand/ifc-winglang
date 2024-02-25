@@ -2,8 +2,7 @@
 * Core Greeting.
 */
 
-pub class Greeting {
-    pub static inflight makeGreeting(name: str?): str {
-        return "Hello, {name}";
-    }
+pub inflight class Greeting {
+    pub extern "../core/makeGreeting.ts" static inflight makeGreeting(name: str?): str;
+    pub extern "../core/makeGreeting.ts" static inflight formatHtml(fgreeting: str?): str;
 }

@@ -1,14 +1,7 @@
 /**
-* Main code. The Program entry.
+* Main code. The Program entry point.
 */
-bring "./handlers" as handlers;
-bring cloud;
 
-let greetingHandler = new handlers.Greeting();
-let makeGreetingFunction = new cloud.Function(greetingHandler);
+bring "./service.w" as service;
 
-bring expect;
-
-test "It will return 'Hello, <name>'" {
-    expect.equal("Hello, Winglang", makeGreetingFunction.invoke("Winglang"));
-}   
+let greetingSevice = new service.Greeting();
